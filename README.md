@@ -1,7 +1,7 @@
 # EDA-111 — Hito 3  
 ## Estructuras de Datos con Java y Spring Boot
 
-Este proyecto reúne tres ejercicios prácticos usando Java y Spring Boot:
+Este proyecto reune tres ejercicios prácticos usando Java y Spring Boot:
 
 - **Arreglo unidimensional** para guardar calificaciones de estudiantes
 - **Arreglo bidimensional** para representar los asientos de un aula
@@ -9,10 +9,9 @@ Este proyecto reúne tres ejercicios prácticos usando Java y Spring Boot:
 
 ---
 
-## Qué incluye el proyecto
+## Que incluye el proyecto
 
 ### Parte 1 — Calificaciones
-Se usa un arreglo fijo de **110 posiciones** para almacenar notas de estudiantes.
 
 Se puede:
 
@@ -25,7 +24,7 @@ Se puede:
 ---
 
 ### Parte 2 — Aula
-Se usa una matriz de **5 filas por 15 columnas** para representar los asientos.
+Se usa una matriz de **5 filas por 5 columnas** para representar los asientos.
 
 Valores:
 

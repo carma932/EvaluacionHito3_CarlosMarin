@@ -5,11 +5,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class AulaService {
 
-    private int[][] aula = new int[5][15];
+    private int[][] aula = new int[5][5];
 
     public AulaService() {
         for (int fila = 0; fila < 5; fila++) {
-            for (int columna = 0; columna < 15; columna++) {
+            for (int columna = 0; columna < 5; columna++) {
                 aula[fila][columna] = 1;
             }
         }
@@ -17,7 +17,7 @@ public class AulaService {
         aula[0][0] = 0;
         aula[0][1] = 0;
         aula[1][2] = 0;
-        aula[2][5] = 0;
+        aula[2][4] = 0;
     }
 
     public int[][] obtenerMatriz() {
@@ -28,7 +28,7 @@ public class AulaService {
         String texto = "";
 
         for (int fila = 0; fila < 5; fila++) {
-            for (int columna = 0; columna < 15; columna++) {
+            for (int columna = 0; columna < 5; columna++) {
                 texto += aula[fila][columna] + " ";
             }
             texto += "\n";
@@ -38,7 +38,7 @@ public class AulaService {
     }
 
     public String ocuparAsiento(int fila, int columna) {
-        if (fila < 0 || fila >= 5 || columna < 0 || columna >= 15) {
+        if (fila < 0 || fila >= 5 || columna < 0 || columna >= 5) {
             return "Posicion invalida";
         }
 
@@ -51,7 +51,7 @@ public class AulaService {
     }
 
     public String liberarAsiento(int fila, int columna) {
-        if (fila < 0 || fila >= 5 || columna < 0 || columna >= 15) {
+        if (fila < 0 || fila >= 5 || columna < 0 || columna >= 5) {
             return "Posicion invalida";
         }
 
@@ -67,7 +67,7 @@ public class AulaService {
         int contador = 0;
 
         for (int fila = 0; fila < 5; fila++) {
-            for (int columna = 0; columna < 15; columna++) {
+            for (int columna = 0; columna < 5; columna++) {
                 if (aula[fila][columna] == 0) {
                     contador++;
                 }
@@ -81,7 +81,7 @@ public class AulaService {
         int contador = 0;
 
         for (int fila = 0; fila < 5; fila++) {
-            for (int columna = 0; columna < 15; columna++) {
+            for (int columna = 0; columna < 5; columna++) {
                 if (aula[fila][columna] == 1) {
                     contador++;
                 }
@@ -96,6 +96,6 @@ public class AulaService {
     }
 
     public int getColumnas() {
-        return 15;
+        return 5;
     }
 }
